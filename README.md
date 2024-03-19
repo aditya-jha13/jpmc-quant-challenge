@@ -7,5 +7,8 @@ A barrier option is a type of derivative where the payoff depends on whether or 
   <img src="img/boptions.png" alt="Barrier Options">
 </p>
 
-Barrier options are also considered a type of **path-dependent option** as the payoff is based on the underlying asset's price path. Using this fact, we can use Monte Carlo Simulation to simulate to generate different paths for stock prices and eventually using it to get the option's price.
+Barrier options are also considered a type of **path-dependent option** as the payoff is based on the underlying asset's price path. Using this fact, we can use Monte Carlo Simulation to simulate to generate different paths for stock prices and eventually using it to get the option's price. Here, I have used two different methods to model the stock price simulation:
+
+### 1. Geometric Brownian Motion Model
+
 
