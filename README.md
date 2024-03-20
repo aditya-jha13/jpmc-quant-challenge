@@ -27,3 +27,15 @@ For this question, we need to find the option price of a **down and out put** op
 
 CIR Model is a stochastic process used to model key financial variables in finance. It is also a mean reverting square root process where on long term the stochastic value will tend to converge towards the mean. The process is governed by the following stochastic differential equation:
 
+<p align="center">
+  <img src="img/cir2.png" alt="Barrier Options">
+</p>
+
+For this question, we need to find the option price of a up and out put option, i.e., the option becomes worthless once the price of the asset goes beyond a certain barrier price. The monte carlo simulation shows 10000 simulations and a barrier price level. To calculate the option's payoff, we average the payoff obtained from each simulation and discount the price to the present value.
+
+<p align="center">
+  <img src="img/2.png" alt="Barrier Options" width="30%">
+</p>
+
+## Air Ticket Pricing Model
+
