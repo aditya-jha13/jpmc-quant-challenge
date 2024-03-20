@@ -23,5 +23,7 @@ For this question, we need to find the option price of a **down and out put** op
   <img src="img/1.png" alt="Barrier Options" width="30%">
 </p>
 
-### 2. CIR Model (Question 2)
+### 2. Cox-Ingersoll-Ross Model (Question 2)
+
+CIR Model is a stochastic process used to model key financial variables in finance. It is also a mean reverting square root process where on long term the stochastic value will tend to converge towards the mean. The process is governed by the following stochastic differential equation:
 
