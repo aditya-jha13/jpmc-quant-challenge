@@ -58,6 +58,6 @@ The modified features after feature engineering is shown below:
 I have used **XGBRegressor** to predict the future prices and obtained a score of 0.9999 on the training dataset and the predicted values are present in the corresponding folder. The below images shows the correlations between the features and the target variable based on the training data & the second plot is a partial dependence plot between the age of the customer and the price they are willing to pay (just an interesting observation).
 
 <p float="left">
-  <img src="img/3-1.png" alt="1" width="350"/>
-  <img src="img/3.png" alt="1" width="350"/>
+  <img src="img/3-1.png" alt="1" width="400"/>
+  <img src="img/3.png" alt="1" width="400"/>
 </p>
