@@ -37,5 +37,27 @@ For this question, we need to find the option price of a up and out put option, 
   <img src="img/2.png" alt="Barrier Options" width="30%">
 </p>
 
-## Air Ticket Pricing Model
+## Air Ticket Pricing Model (Question 3)
 
+Optimal timing for airline ticket purchasing from the consumer’s perspective is challenging principally because buyers have insufficient information for reasoning about future price movements. Here, we have been provided with the training dataset, of which some entries are shown below:
+
+<p align="center">
+  <img src="img/3-3.png" alt="Barrier Options">
+</p>
+
+The most challenging part of the problem was feature engineering, in order to compute the best possible future prices I tried constructing new features from the existing features to make the model more robust. Clarification regarding some not so obvious features:
+1. From, To - There are 6 cities in the dataset, a dictionary is created where each city corresponds to a number
+2. Flight Time - the hour part of HH:MM is considered as a feature
+3. Class - There are two classes of ticket - economy and business. The average ratio of price of these two types of ticket is 1:3.6
+4. diff - It is the difference in time from when the ticket was bought and when the flight is scheduled.
+5. WEEKEND - Anytime after 17:00, Friday till 00:00 Monday is considered a WEEKEND
+The modified features after feature engineering is shown below:
+
+![3-4](https://github.com/aditya-jha13/jpmc-quant-challenge/assets/75258278/4f340d38-bf1f-4c7d-b6f6-990bd96f67c6)
+
+I have used **XGBRegressor** to predict the future prices and obtained a score of 0.9999 on the training dataset and the predicted values are present in the corresponding folder. The below images shows the correlations between the features and the target variable based on the training data & the second plot is a partial dependence plot between the age of the customer and the price they are willing to pay (just an interesting observation).
+
+<div style="display: flex;">
+  <img src="img/3-1.png" alt="Image 1" style="width: 50%;">
+  <img src="img/3.png" alt="Image 2" style="width: 50%;">
+</div>
