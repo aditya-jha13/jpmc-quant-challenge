@@ -14,7 +14,12 @@ Barrier options are also considered a type of **path-dependent option** as the p
 It assumes that the logarithm of the asset's price follows a random walk with drift and volatility, and it's often used to simulate stock prices over time. The below equation is present in it's differential form, to simulate the prices we need to first discretize it. The resultant monte carlo simulation follows a **normal distribution** with it's mean same as that of the initial stock price (S0) and standard deviation is equal to the volatility.
 
 <p align="center">
-  <img src="img/BGMM.png" alt="Barrier Options">
+  <img src="img/BGMM.png" alt="Barrier Options" width="50%">
 </p>
 
+For this question, we need to find the option price of a **down and out put** option, i.e., the option becomes worthless once the price of the asset goes below the barrier price. The monte carlo simulation below shows 10000 simulations and a barrier price level. To calculate the option's payoff, we average the payoff obtained from each simulation ov
+
+<p align="center">
+  <img src="img/1.png" alt="Barrier Options">
+</p>
 
