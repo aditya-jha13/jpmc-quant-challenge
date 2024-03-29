@@ -1,5 +1,9 @@
 # JPMC QUANT CHALLENGE
-
+## Installation & Setup
+```bash
+git clone https://github.com/aditya-jha13/jpmc-quant-challenge
+```
+The required packages are `numpy` `pandas` `matplotlib`. The whole setup works fine in `Python 3.8`
 ## Barrier Option Pricing Model
 A barrier option is a type of derivative where the payoff depends on whether or not the underlying asset has reached or exceeded a predetermined price. A barrier option can be a **knock-out**, meaning it expires worthless if the underlying exceeds a certain price or be a **knock-in**, meaning it has no value until the underlying reaches a certain price. 
 
